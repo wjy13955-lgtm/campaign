@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Programa Spotlight de WebComics App 2026: requisitos, tarifas, normas de publicación y calendario de pagos para creadores en español.">
+  <meta name="theme-color" content="#ffd500">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Programa Spotlight de WebComics App 2026">
+  <meta property="og:description" content="Crea videos cortos de cómics y gana por cada reproducción válida.">
+  <meta property="og:image" content="social-preview.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Programa Spotlight de WebComics 2026</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Inicio de WebComics Spotlight"><span class="brand-mark">W</span><span>WebComics <b>Spotlight</b></span></a>
+    <button class="menu-button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú"><span></span><span></span></button>
+    <nav id="site-nav" aria-label="Navegación principal">
+      <a href="#earnings">Ganancias</a><a href="#requirements">Requisitos</a><a href="#posting">Publicación</a><a href="#payment">Pagos</a>
+      <a class="nav-cta" href="#apply">Únete al programa</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> Programa para creadores · 2026</div>
+        <h1>Convierte momentos de cómic en <em>ingresos.</em></h1>
+        <p class="hero-lead">Crea videos cortos basados en historias de WebComics, amplía tu audiencia en TikTok, Instagram, YouTube y Facebook, y gana por cada reproducción válida.</p>
+        <div class="hero-actions"><a class="button primary" href="#apply">Empieza a crear <span>↗</span></a><a class="button ghost" href="#earnings">Cómo funcionan las ganancias</a></div>
+        <div class="trust-row"><div><strong>70 M+</strong><span>Usuarios</span></div><div><strong>6.000+</strong><span>Series</span></div><div><strong>4.000+</strong><span>Autores</span></div></div>
+      </div>
+      <div class="hero-art" aria-label="Logotipo de WebComics"><div class="logo-burst"><span>WEB</span><strong>COMICS</strong></div></div>
+    </section>
+
+    <section class="ticker" aria-label="Puntos clave del programa"><div>LEE <i>✦</i> CREA <i>✦</i> COMPARTE <i>✦</i> GANA <i>✦</i> LEE <i>✦</i> CREA <i>✦</i> COMPARTE <i>✦</i> GANA</div></section>
+    <aside class="page-nav"><b>EN ESTA PÁGINA</b><a href="#requirements">Elegibilidad</a><a href="#earnings">Plan de incentivos</a><a href="#content">Requisitos de video</a><a href="#posting">Publicación</a><a href="#payment">Calendario de pagos</a><a href="#payment">Excepciones</a><a href="#apply">Enlaces oficiales</a></aside>
+
+    <section class="section split" id="earnings">
+      <div class="section-intro"><span class="section-number">01</span><div class="eyebrow dark"><span></span> Plan de incentivos</div><h2>Cada reproducción válida suma.</h2><p>La tarifa depende del título y del formato. Consulta la lista de colaboraciones, que se actualiza mensualmente.</p><div class="target-regions"><div class="target-regions-heading"><span>Regiones válidas</span><strong>Las reproducciones de estos 7 mercados generan ingresos</strong></div><div class="country-list"><span>🇲🇽 México</span><span>🇦🇷 Argentina</span><span>🇨🇱 Chile</span><span>🇪🇸 España</span><span>🇨🇴 Colombia</span><span>🇵🇷 Puerto Rico</span><span>🇨🇷 Costa Rica</span></div></div><div class="rate-card"><label for="rate-select">Selecciona formato y tarifa</label><select id="rate-select"><option value="0.25" data-label="Video regular">Video regular · $0,25</option><option value="0.15" data-label="Presentación de diapositivas">Presentación · $0,15</option><option value="0.2" data-label="Otra tarifa según el título">Tarifa por título · $0,20</option><option value="0.1" data-label="Tarifa mínima según el título">Tarifa mínima · $0,10</option></select><div class="selected-rate"><strong id="rate-display">$0,25</strong><span><b id="rate-format">Video regular</b><small>por 1.000 reproducciones válidas</small></span></div></div><p class="fine-print">Los videos con menos de 2.000 reproducciones no se contabilizan. El ingreso máximo por video es de 1.000 USD.</p></div>
+      <div class="calculator card">
+        <div class="card-heading"><div><span>Cálculo rápido</span><h3>Calculadora de ingresos</h3></div><span class="live-dot">En vivo</span></div>
+        <label>Reproducciones mensuales <output id="views-output">1.000.000</output><input id="views" type="range" min="0" max="5000000" step="50000" value="1000000"></label>
+        <label>Reproducciones de regiones válidas <output id="region-output">20%</output><input id="region" type="range" min="0" max="100" step="1" value="20"></label>
+        <div class="estimate"><span>Ganancias estimadas</span><strong id="estimate-output">200,00 US$</strong><small id="estimate-formula">reproducciones × proporción válida ÷ 1.000 × 0,25 US$</small></div>
+        <div class="calculator-note">La cifra es una estimación. La liquidación final se basa en las métricas verificadas y la tarifa del título.</div>
+      </div>
+    </section>
+
+    <section class="section warm" id="requirements">
+      <div class="section-title"><div><span class="section-number">02</span><div class="eyebrow dark"><span></span> Quién puede participar</div><h2>Dos cifras. Una oportunidad.</h2></div><p>Revisa las estadísticas de tu cuenta de los últimos 30 días. Si cumples ambos mínimos, ponte en contacto con el equipo.</p></div>
+      <div class="eligibility-grid"><article class="metric-card"><span class="metric-icon">◎</span><small>Ubicación de la audiencia</small><strong>15%+</strong><p>de seguidores de las siete regiones válidas durante los últimos 30 días</p><div class="audience-countries" aria-label="Siete regiones válidas"><span>México</span><span>Argentina</span><span>Chile</span><span>España</span><span>Colombia</span><span>Puerto Rico</span><span>Costa Rica</span></div></article><article class="metric-card accent"><span class="metric-icon">▶</span><small>Rendimiento de video</small><strong>1.000+</strong><p>reproducciones de video durante los últimos 30 días</p></article><article class="steps-card"><h3>Cómo inscribirte</h3><ol><li><span>1</span><div><b>Confirma la colaboración</b><p>Contacta con Joy, Influencer Marketing Manager.</p></div></li><li><span>2</span><div><b>Recibe tus enlaces</b><p>Añade el enlace promocional exclusivo a tu perfil.</p></div></li><li><span>3</span><div><b>Selecciona tus cómics</b><p>Elige títulos de la lista recomendada.</p></div></li></ol></article></div>
+    </section>
+
+<section class="section" id="content">
+      <div class="section-title compact"><div><span class="section-number">03</span><div class="eyebrow dark"><span></span> Requisitos de video</div><h2>Haz que los primeros segundos sean imposibles de ignorar.</h2></div></div>
+      <div class="content-grid"><article class="feature-card red"><span>01</span><h3>Elige títulos aprobados</h3><p>Usa únicamente cómics de la lista recomendada y respeta los límites de capítulos.</p></article><article class="feature-card blue"><span>02</span><h3>Mantén el interés</h3><p>Crea varios videos por cómic y muestra conflictos entre capítulos para animar al público a seguir leyendo.</p></article><article class="feature-card yellow"><span>03</span><h3>Publícalo en español</h3><p>Incluye subtítulos y doblaje en español. Cada video debe durar al menos 12 segundos.</p></article></div>
+      <div class="checklist"><div><h3>Lista de control</h3><p>Los videos basados en títulos fuera de la lista recomendada no se contabilizarán.</p><a class="comic-list-link" href="https://docs.google.com/spreadsheets/d/10zHWq3BSsZ8fHFtBH7fb0xfazm_pdmOZF5NeOBNEIlo/edit?gid=0#gid=0" target="_blank" rel="noopener"><span>Lista oficial</span><strong>Cómics recomendados de WebComics App</strong><small>Versión en español · Abrir hoja ↗</small></a></div><ul><li>Elige solo títulos de la lista facilitada</li><li>Respeta los límites de capítulos indicados</li><li>Crea varios videos por cómic cuando sea posible</li></ul></div>
+    </section>
+
+    <section class="section ink" id="posting">
+      <div class="section-title light"><div><span class="section-number">04</span><div class="eyebrow"><span></span> Guía de publicación</div><h2>Publica correctamente. Haz que cada reproducción cuente.</h2></div><p>Selecciona una plataforma para consultar el enlace del perfil, el texto de publicación y las acciones obligatorias.</p></div>
+      <div class="platform-tabs" role="tablist" aria-label="Requisitos por plataforma"><button class="active" role="tab" aria-selected="true" data-platform="tiktok">TikTok</button><button role="tab" aria-selected="false" data-platform="instagram">Instagram</button><button role="tab" aria-selected="false" data-platform="youtube">YouTube Shorts</button><button role="tab" aria-selected="false" data-platform="facebook">Facebook Reels</button></div>
+      <div class="platform-panel card-dark" id="platform-panel"></div>
+      <div class="publishing-income-notice"><strong>Importante para recibir el pago</strong><ol><li>Incumplir los requisitos puede <b>reducir o anular tus ingresos.</b></li><li>Si se requiere un código, usa el del cómic proporcionado por WebComics. Sin él, con uno incorrecto o no proporcionado, <b class="no-payment">no habrá pago.</b></li></ol></div>
+    </section>
+
+    <section class="section" id="payment">
+      <div class="section-title"><div><span class="section-number">05</span><div class="eyebrow dark"><span></span> Pagos</div><h2>Un calendario mensual claro.</h2></div><p>Entrega a tiempo las estadísticas del mes anterior para que la liquidación pueda avanzar.</p></div>
+      <div class="timeline"><article><span>01</span><small>Durante el mes</small><h3>Crea y publica</h3><p>Mantén públicos los videos de colaboración durante más de 40 días.</p></article><article><span>15</span><small>El día 15 de cada mes</small><h3>Cálculo de reproducciones</h3><p>Calculamos las reproducciones de todos los videos de colaboración publicados <strong>desde el día 1 hasta el último día del mes anterior</strong>.<br>Envía las estadísticas de tus videos para su verificación.</p></article><article class="payment-method-card"><span>30</span><small>Antes del día 30</small><h3>Pago enviado</h3><p>Elige el método que prefieras:</p><div class="payment-methods"><strong>Payoneer <em>Recomendado</em></strong><strong>Transferencia bancaria</strong><strong>PayPal</strong></div></article></div>
+      <div class="notice-grid"><article><h3><span>!</span> El pago puede retrasarse</h3><ul><li>No entregas las estadísticas antes del día 15</li><li>El saldo es inferior a 30 USD y se acumula</li><li>Los festivos afectan al procesamiento bancario</li></ul></article><article class="danger"><h3><span>×</span> El pago puede cancelarse</h3><ul><li>Interacciones compradas, falsas o infladas</li><li>El contenido incumple las normas de video o publicación</li><li>El cómic no está en la lista aprobada</li><li>El enlace o los videos se ocultan antes del pago</li><li>Contenido copiado, repetido o de competidores</li><li>Datos de pago incorrectos provocan una devolución</li></ul></article></div>
+    </section>
+
+    <section class="section compliance"><span class="section-number">06</span><div><div class="eyebrow dark"><span></span> La autenticidad importa</div><h2>Crea con honestidad.<br>Crece de forma sostenible.</h2></div><div><p>Todos los likes, reproducciones y datos demográficos deben ser auténticos y obtenidos de forma orgánica. WebComics puede verificar las métricas mediante herramientas y análisis de terceros.</p><details><summary>Prevención del fraude y consecuencias <span>+</span></summary><p>La actividad fraudulenta puede provocar la retención, cancelación o ajuste de pagos, la terminación inmediata del contrato, solicitudes de reembolso y acciones legales. Si las estadísticas facilitadas difieren de forma significativa de los datos rastreados, WebComics podrá liquidar según el rendimiento verificado.</p></details></div></section>
+
+    <section class="cta-section" id="apply"><div><div class="eyebrow dark"><span></span> Descubre WebComics</div><h2>Lee más. Descarga<br>la aplicación.</h2><p>Visita WebComics o descarga la app para iOS y Android.</p><div class="store-buttons"><a href="https://apps.apple.com/us/app/webcomics-webtoon-manga/id1337550955" target="_blank" rel="noopener"><svg class="store-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.05 12.54c.03 3.23 2.83 4.3 2.86 4.31-.02.08-.45 1.54-1.48 3.05-.89 1.3-1.81 2.6-3.27 2.63-1.43.03-1.89-.85-3.52-.85-1.63 0-2.14.82-3.49.88-1.41.05-2.48-1.41-3.38-2.7-1.84-2.66-3.24-7.52-1.35-10.8a5.24 5.24 0 0 1 4.43-2.69c1.38-.03 2.69.94 3.53.94.85 0 2.43-1.16 4.09-.99.7.03 2.66.28 3.92 2.13-.1.06-2.34 1.36-2.32 4.09zM14.37 4.54c.75-.9 1.26-2.15 1.12-3.4-1.08.04-2.39.72-3.17 1.63-.69.79-1.29 2.05-1.13 3.26 1.2.09 2.43-.61 3.18-1.49z"/></svg><span>Descárgala en<br><b>App Store</b></span></a><a href="https://play.google.com/store/apps/details?id=com.webcomics.manga" target="_blank" rel="noopener"><svg class="store-icon" viewBox="0 0 24 26" aria-hidden="true"><path fill="#4285F4" d="M1 1 13 13 1 25z"/><path fill="#34A853" d="m1 1 15 8-3 4z"/><path fill="#FBBC04" d="m16 9 7 4-7 4-3-4z"/><path fill="#EA4335" d="m1 25 12-12 3 4z"/></svg><span>DISPONIBLE EN<br><b>Google Play</b></span></a></div></div><div class="cta-side"><a class="official-button" href="https://www.webcomicsapp.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg><span>Visita el sitio oficial</span><span class="contact-arrow" aria-hidden="true">↗</span></a><div class="contact-mini"><b>Contacto para creadores</b><a href="mailto:joy@webcomicsapp.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg><span><small>Email</small>joy@webcomicsapp.com</span><span class="contact-arrow" aria-hidden="true">↗</span></a><a href="https://wa.me/8613959205041" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a9 9 0 0 1-13.3 7.9L3 21l1.6-4.7A9 9 0 1 1 21 11.5Z"/><path d="M8 7c0 5 4 9 9 9l1-3-3-1-1 1c-2-1-3-2-4-4l1-1-1-2Z"/></svg><span><small>WhatsApp</small>+86 139 5920 5041</span><span class="contact-arrow" aria-hidden="true">↗</span></a><a href="https://t.me/joy_webcomics" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 18-7-4 18-6-6-4 2 1-5Z"/><path d="m8 12 13-9-10 12"/></svg><span><small>Telegram</small>@joy_webcomics</span><span class="contact-arrow" aria-hidden="true">↗</span></a></div></div></section>
+  </main>
+
+  <footer><a class="brand" href="#top"><span class="brand-mark">W</span><span>WebComics <b>Spotlight</b></span></a><div><a href="https://www.webcomicsapp.com/" target="_blank" rel="noopener">Sitio oficial ↗</a><a href="#requirements">Normas del programa</a></div><p>© 2026 Equipo de Marketing de WebComics</p></footer>
+  <script src="script-es.js"></script>
+</body>
+</html>
